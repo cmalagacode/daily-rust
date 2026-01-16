@@ -103,4 +103,5 @@ fn shadowing_rusty() {
 
     let x = 22; // shadow
     println!("{}", x);
+    println!("{}", x);
 }
