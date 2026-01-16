@@ -91,6 +91,7 @@ fn main() {
     all_about_tuples();
     println!("==============");
     fun_string();
+    println!("Hello")
 }
 fn shadowing_rusty() {
     let x = 5;
