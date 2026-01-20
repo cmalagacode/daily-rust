@@ -94,6 +94,9 @@ fn main() {
     fun_string();
     println!("Hello");
     compound_data_types();
+    println!("=============");
+    rust_dynamic_array();
+    println!("=============")
 }
 fn shadowing_rusty() {
     let x = 5;
@@ -111,6 +114,18 @@ fn rust_array() {
     println!("Names: {:?}", names);
     let other = [100, 200, 300];
     println!("Other: {:?}", other);
+}
+
+fn rust_dynamic_array() {
+    let mut v = Vec::new();
+    v.push(1);
+    v.push(2);
+    v.push(3);
+    v.push(4);
+    let mut teams: Vec<&str> = vec!["Bucs", "Eagles", "Patriots"];
+    teams.push("Rams");
+    println!("{:?}", teams);
+    println!("{:?}", v);
 }
 
 fn compound_data_types() {
