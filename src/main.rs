@@ -76,6 +76,7 @@ fn fun_string() {
 }
 
 fn main() {
+    rust_array();
     hello_world();
     two_pointer_a();
     // abcdcba
@@ -101,6 +102,15 @@ fn shadowing_rusty() {
         let x = 10;
         println!("{}", x);
     }
+}
+
+fn rust_array() {
+    let grades: [f32; 5] = [50.23, 100.00, 92.33, 40.33, 33.33];
+    println!("Grades: {:?}", grades);
+    let names: [&str; 5] = ["John", "Jane", "Jack", "Jill", "Jim"];
+    println!("Names: {:?}", names);
+    let other = [100, 200, 300];
+    println!("Other: {:?}", other);
 }
 
 fn compound_data_types() {
