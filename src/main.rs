@@ -26,9 +26,8 @@ fn is_pali(x: &str) -> bool {
 }
 
 fn vect_test() {
-    let _x = vec![1, 2, 3,4, 5];
+    let _x = vec![1, 2, 3, 4, 5];
 }
-
 
 fn hello_world() {
     println!("Hello, world!");
@@ -96,7 +95,17 @@ fn main() {
     compound_data_types();
     println!("=============");
     rust_dynamic_array();
-    println!("=============")
+    println!("=============");
+    let mut x: i32; // declare mutable i32
+    let y = 10;// declare and init i32. variables can be inferred
+    let yy; // why work ?? immutable variables can be assigned once
+    yy = 10; // why work ?? immutable variables can be assigned once
+    println!("{}", yy);
+    const BIG_VALUE: u32 = 100_000; // constant is bound by name and remains fixed throughout the programs execution
+    println!("{}", BIG_VALUE); // 100_000 is pasted here by the compiler
+    static MAX_HEALTH: f64 = 100.00; // static are constants that are not inlined and referenced in memory\
+    let ref_example = &MAX_HEALTH; // ref mem address
+    println!("{:p} = {:p}", &MAX_HEALTH, ref_example);
 }
 fn shadowing_rusty() {
     let x = 5;
