@@ -106,6 +106,9 @@ fn main() {
     static MAX_HEALTH: f64 = 100.00; // static are constants that are not inlined and referenced in memory\
     let ref_example = &MAX_HEALTH; // ref mem address
     println!("{:p} = {:p}", &MAX_HEALTH, ref_example);
+    println!();
+    let num_other: i128 = 100_000_000;
+    println!("Size in Bytes {}", size_of_val(&num_other));
 }
 fn shadowing_rusty() {
     let x = 5;
